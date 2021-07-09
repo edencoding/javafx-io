@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragInExample">
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white;">
+        <Label text="Drag Something from your Desktop" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </HBox>
+    <StackPane BorderPane.alignment="CENTER">
+        <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" />
+        <Pane fx:id="dropInstructions" mouseTransparent="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3F9F3;" visible="false">
+            <ImageView layoutX="85.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/download.png" />
+            </ImageView>
+         <Label layoutX="57.0" layoutY="91.0" prefHeight="65.0" prefWidth="87.0" text="Drop text file here to view content" textAlignment="CENTER" wrapText="true" />
+        </Pane>
+    </StackPane>
+</VBox>

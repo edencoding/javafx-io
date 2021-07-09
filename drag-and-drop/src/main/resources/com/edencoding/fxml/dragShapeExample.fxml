@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragAndDropExample">
+   <Pane fx:id="leftPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DBE2F6;">
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="27.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="146.0" />
+      <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white;" />
+   </Pane>
+   <Pane fx:id="rightPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3F9F3;">
+      <children>
+         <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white;" />
+         <Label layoutX="-69.0" layoutY="6.0" text="Drag the Rectangle Only">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+      </children>
+   </Pane>
+</HBox>

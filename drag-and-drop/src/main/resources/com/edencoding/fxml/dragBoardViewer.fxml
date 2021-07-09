@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragAndDropViewer">
+   <center>
+      <HBox prefHeight="200.0" style="-fx-background-color: #F3F9F3;" BorderPane.alignment="CENTER">
+         <VBox style="-fx-background-color: #DBE2F6;" HBox.hgrow="ALWAYS">
+            <Label text="Dragboard contents:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TableView fx:id="viewer" style="-fx-background-color: #F3F9F3;">
+               <columns>
+                  <TableColumn fx:id="formatColumn" prefWidth="150.0" text="Format" />
+                  <TableColumn fx:id="contentColumn" prefWidth="350.0" text="Content" />
+               </columns></TableView>
+         </VBox>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <Label text="Drag Something from your Desktop">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Label>
+      </HBox>
+   </top>
+</BorderPane>
