@@ -11,12 +11,15 @@ public class DragTextBetweenWindows {
 
     public void initialize() {
         textArea.setOnDragDetected(event -> {
+            //1. Start the drag and drop
             Dragboard db = textArea.startDragAndDrop(TransferMode.MOVE);
+
+            //2. Push the text area's content to the dragboard
             ClipboardContent content = new ClipboardContent();
             content.putString(textArea.getText());
             db.setContent(content);
 
-            //remove rectangle from current parent (prevent duplicate parent exception)
+            //3. Clear the text area
             textArea.setText("");
         });
 
