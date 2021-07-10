@@ -22,8 +22,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
-public class DragAndDropExample {
-
+public class DragShapeBetweenPanes {
 
     public Pane leftPane;
     public Pane rightPane;

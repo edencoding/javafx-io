@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragAndDropViewer">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragboardViewer">
    <center>
       <HBox prefHeight="200.0" style="-fx-background-color: #F3F9F3;" BorderPane.alignment="CENTER">
          <VBox style="-fx-background-color: #DBE2F6;" HBox.hgrow="ALWAYS">

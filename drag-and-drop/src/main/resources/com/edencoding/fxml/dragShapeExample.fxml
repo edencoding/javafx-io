@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<HBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragAndDropExample">
+<HBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragShapeBetweenPanes">
    <Pane fx:id="leftPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DBE2F6;">
       <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="27.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="146.0" />
       <AnchorPane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white;" />

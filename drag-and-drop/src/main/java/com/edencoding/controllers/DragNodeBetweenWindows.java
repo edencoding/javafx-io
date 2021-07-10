@@ -27,7 +27,7 @@ import javafx.util.Duration;
 
 import java.util.UUID;
 
-public class DragAcrossController {
+public class DragNodeBetweenWindows {
 
     public Rectangle rectangle;
     public Pane pane;

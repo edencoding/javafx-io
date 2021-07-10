@@ -13,7 +13,7 @@ import java.nio.file.Files;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Stream;
 
-public class DragInExample {
+public class DragFileIntoJavaFX {
 
     public TextArea textArea;
     public Pane dropInstructions;
