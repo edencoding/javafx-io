@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DBE2F6;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edencoding.controllers.DragTextBetweenWindows">
+      <Pane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <Label layoutX="46.0" layoutY="6.0" text="Drag the Rectangle">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Label>
+      </Pane>
+   <TextArea fx:id="textArea" layoutY="30.0" prefHeight="171.0" prefWidth="200.0" />
+</Pane>
