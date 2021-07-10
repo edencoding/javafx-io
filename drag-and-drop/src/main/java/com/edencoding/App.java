@@ -17,7 +17,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         stage.getIcons().add(new Image(getClass().getResourceAsStream("images/EdenCodingIcon.png")));
         stage.setTitle("Drag and Drop example");
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("fxml/dragBoardViewer.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("fxml/dragFileOut.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setResizable(false);
