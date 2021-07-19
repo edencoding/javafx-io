@@ -80,7 +80,11 @@ public class Controller {
         //create the dialog itself
         Dialog<Person> dialog = new Dialog<>();
         dialog.setTitle("Add Dialog");
-        dialog.setHeaderText("Add a new person to the database");
+        if(person==null){
+            dialog.setHeaderText("Add a new person to the database");
+        } else {
+            dialog.setHeaderText("Edit a database record");
+        }
         dialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
         Stage dialogWindow = (Stage) dialog.getDialogPane().getScene().getWindow();
         dialogWindow.getIcons().add(new Image(SQLiteExampleApp.class.getResource("img/EdenCodingIcon.png").toExternalForm()));
