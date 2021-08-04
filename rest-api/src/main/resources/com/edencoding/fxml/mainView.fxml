@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="450" prefWidth="700"
+            stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            fx:controller="com.edencoding.controllers.MainViewController">
+    <top>
+        <Label alignment="CENTER" maxWidth="700.0" styleClass="title" text="Load a random image into App to analyse"
+               BorderPane.alignment="CENTER"/>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+            <Button onAction="#loadNewImage" text="Load a new image!"/>
+        </HBox>
+    </bottom>
+    <right>
+        <VBox alignment="TOP_CENTER" spacing="25.0">
+            <Label styleClass="predictions-label" text="Predictions:"/>
+            <ListView fx:id="predictionsListView" prefWidth="200.0"/>
+            <Label fx:id="progressLabel" text="Progress:"/>
+            <ProgressBar fx:id="progressBar" maxWidth="250.0" minHeight="25.0" prefHeight="25.0" progress="0.0"/>
+            <padding>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </padding>
+        </VBox>
+    </right>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="25.0">
+            <Label styleClass="predictions-label" text="Image"/>
+            <VBox alignment="CENTER" styleClass="display-pane" VBox.vgrow="ALWAYS">
+                <Group>
+                    <ImageView fx:id="imageDisplayNode" preserveRatio="true"/>
+                    <Pane fx:id="overlayPane"/>
+                </Group>
+            </VBox>
+            <BorderPane.margin>
+                <Insets/>
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>
