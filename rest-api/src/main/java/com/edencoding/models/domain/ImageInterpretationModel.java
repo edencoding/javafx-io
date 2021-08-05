@@ -26,8 +26,8 @@ public class ImageInterpretationModel {
 
     private final ObjectProperty<Image> loadedImage = new SimpleObjectProperty<>();
     private final ObservableList<Prediction> predictions = FXCollections.observableArrayList();
-    private final DoubleProperty progress = new SimpleDoubleProperty(1);
-    private final StringProperty statusText = new SimpleStringProperty("Complete!");
+    private final DoubleProperty progress = new SimpleDoubleProperty(0);
+    private final StringProperty statusText = new SimpleStringProperty("-- Progress --");
     private final Service<Void> service = new Service<>() {
         @Override
         protected Task<Void> createTask() {
