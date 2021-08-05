@@ -82,7 +82,7 @@ public class MainViewController {
 
     private void addOverlayPaneListeners() {
         model.predictions().addListener((ListChangeListener<Prediction>) c -> {
-            overlayPane.getChildren().clear();
+            clearHighlights();
             createHighlights(model.predictions());
         });
     }
@@ -115,7 +115,11 @@ public class MainViewController {
 
     }
 
-    public void createHighlights(ObservableList<Prediction> predictions) {
+    private void clearHighlights(){
+        overlayPane.getChildren().clear();
+    }
+
+    private void createHighlights(ObservableList<Prediction> predictions) {
         Double imagePixelWidth = model.getLoadedImage().getWidth();
         Double imageRealWidth = imageDisplayNode.getFitWidth();
         Double imagePixelHeight = model.getLoadedImage().getHeight();
